@@ -1,0 +1,31 @@
+public class Budget {
+    
+    public static void main(String[] agrs) {
+        // ********
+        // Project 1
+        // ********
+
+        int rent = 625;
+        // cost of rent
+        int internetService = 27;
+        // cost of internet service
+        int groceryBill = 250;
+        // cost of grocery bill
+        int freeSpend = 150;
+        // money to freely spend
+        int totalMonthlyExpense = rent + internetService + groceryBill + freeSpend;
+        // cost of everything per month
+        int weeklyExpense = (rent + internetService + groceryBill + freeSpend) / 4;
+        // cost of everything per week, month divided by four
+        int wage = 10;
+        // income per hour
+        System.out.println("The total cost of living per month including free spending is " + totalMonthlyExpense);
+        //will print out the cost for living per month
+        System.out.println("The total cost of living per week is " +  weeklyExpense);
+        // will print out the cost per living per week
+        System.out.println("The student will have to work " + weeklyExpense / wage + " hours to break even");
+        // will print out how amny hours student will have to work to pay of cost exactly
+        System.out.println("For the student to save an extra 100, the student would have to work " + (weeklyExpense + 100) / wage + " hours");
+        // will print how many hours the stuent will have to work to pay of cost and have a extra 100 to spend
+    }  
+}
